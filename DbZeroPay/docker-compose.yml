@@ -1,0 +1,24 @@
+services:
+  zeropay-db:
+    image: postgres:17
+    networks:
+      - zeropay-network
+    container_name: zeropay-db
+    environment:
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=admin
+      - POSTGRES_DB=zeropay
+    ports:
+      - 5490:5432
+    volumes:
+      - ./scripts:/docker-entrypoint-initdb.d
+      - zeropay-db-data:/var/lib/postgresql/data
+    restart: always
+
+volumes:
+  zeropay-db-data:
+    name: zeropay-db-data
+
+networks:
+  zeropay-network:
+    external: true
