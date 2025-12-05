@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ZeroPay.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+904ca74f25f0b67946f130cfe203d1cacbebd123")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a736d8d5c989ff31308ce0166c2195aa4314272b")]
 [assembly: System.Reflection.AssemblyProductAttribute("ZeroPay.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ZeroPay.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

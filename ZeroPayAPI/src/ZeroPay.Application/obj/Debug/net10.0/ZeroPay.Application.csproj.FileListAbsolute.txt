@@ -1,0 +1,11 @@
+/home/fabiokusaba/RiderProjects/ZeroPay/ZeroPayAPI/src/ZeroPay.Application/bin/Debug/net10.0/ZeroPay.Application.deps.json
+/home/fabiokusaba/RiderProjects/ZeroPay/ZeroPayAPI/src/ZeroPay.Application/bin/Debug/net10.0/ZeroPay.Application.dll
+/home/fabiokusaba/RiderProjects/ZeroPay/ZeroPayAPI/src/ZeroPay.Application/bin/Debug/net10.0/ZeroPay.Application.pdb
+/home/fabiokusaba/RiderProjects/ZeroPay/ZeroPayAPI/src/ZeroPay.Application/obj/Debug/net10.0/ZeroPay.Application.GeneratedMSBuildEditorConfig.editorconfig
+/home/fabiokusaba/RiderProjects/ZeroPay/ZeroPayAPI/src/ZeroPay.Application/obj/Debug/net10.0/ZeroPay.Application.AssemblyInfoInputs.cache
+/home/fabiokusaba/RiderProjects/ZeroPay/ZeroPayAPI/src/ZeroPay.Application/obj/Debug/net10.0/ZeroPay.Application.AssemblyInfo.cs
+/home/fabiokusaba/RiderProjects/ZeroPay/ZeroPayAPI/src/ZeroPay.Application/obj/Debug/net10.0/ZeroPay.Application.csproj.CoreCompileInputs.cache
+/home/fabiokusaba/RiderProjects/ZeroPay/ZeroPayAPI/src/ZeroPay.Application/obj/Debug/net10.0/ZeroPay.Application.dll
+/home/fabiokusaba/RiderProjects/ZeroPay/ZeroPayAPI/src/ZeroPay.Application/obj/Debug/net10.0/refint/ZeroPay.Application.dll
+/home/fabiokusaba/RiderProjects/ZeroPay/ZeroPayAPI/src/ZeroPay.Application/obj/Debug/net10.0/ZeroPay.Application.pdb
+/home/fabiokusaba/RiderProjects/ZeroPay/ZeroPayAPI/src/ZeroPay.Application/obj/Debug/net10.0/ref/ZeroPay.Application.dll
