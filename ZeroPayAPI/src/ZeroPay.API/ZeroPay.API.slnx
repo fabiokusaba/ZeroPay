@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="../ZeroPay.Application/ZeroPay.Application.csproj" />
+  <Project Path="../ZeroPay.Core/ZeroPay.Core.csproj" />
+  <Project Path="../ZeroPay.Infrastructure/ZeroPay.Infrastructure.csproj" />
+  <Project Path="../ZeroPay.Shared/ZeroPay.Shared.csproj" />
+  <Project Path="ZeroPay.API.csproj" />
+</Solution>

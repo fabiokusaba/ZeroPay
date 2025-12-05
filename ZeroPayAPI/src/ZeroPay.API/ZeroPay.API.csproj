@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net10.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.0"/>
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="10.0.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\ZeroPay.Application\ZeroPay.Application.csproj" />
+      <ProjectReference Include="..\ZeroPay.Core\ZeroPay.Core.csproj" />
+      <ProjectReference Include="..\ZeroPay.Infrastructure\ZeroPay.Infrastructure.csproj" />
+      <ProjectReference Include="..\ZeroPay.Shared\ZeroPay.Shared.csproj" />
+    </ItemGroup>
+
+</Project>
