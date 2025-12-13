@@ -1,4 +1,6 @@
-﻿namespace ZeroPay.Core.Entities;
+﻿using ZeroPay.Core.Enums;
+
+namespace ZeroPay.Core.Entities;
 
 public class Cliente
 {
@@ -6,7 +8,7 @@ public class Cliente
 
     public string NomeCompleto { get; set; } = null!;
 
-    public short Situacao { get; set; }
+    public ESituacaoCliente Situacao { get; set; }
 
     public string Email { get; set; } = null!;
 
