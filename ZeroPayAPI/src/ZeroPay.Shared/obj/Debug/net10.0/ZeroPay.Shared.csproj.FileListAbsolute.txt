@@ -9,3 +9,4 @@
 /home/fabiokusaba/RiderProjects/ZeroPay/ZeroPayAPI/src/ZeroPay.Shared/obj/Debug/net10.0/refint/ZeroPay.Shared.dll
 /home/fabiokusaba/RiderProjects/ZeroPay/ZeroPayAPI/src/ZeroPay.Shared/obj/Debug/net10.0/ZeroPay.Shared.pdb
 /home/fabiokusaba/RiderProjects/ZeroPay/ZeroPayAPI/src/ZeroPay.Shared/obj/Debug/net10.0/ref/ZeroPay.Shared.dll
+/home/fabiokusaba/RiderProjects/ZeroPay/ZeroPayAPI/src/ZeroPay.Shared/obj/Debug/net10.0/ZeroPay.Shared.sourcelink.json

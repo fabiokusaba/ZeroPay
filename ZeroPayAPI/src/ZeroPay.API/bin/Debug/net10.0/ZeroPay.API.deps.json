@@ -127,6 +127,9 @@
         }
       },
       "ZeroPay.Application/1.0.0": {
+        "dependencies": {
+          "ZeroPay.Core": "1.0.0"
+        },
         "runtime": {
           "ZeroPay.Application.dll": {
             "assemblyVersion": "1.0.0.0",

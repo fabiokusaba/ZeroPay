@@ -93,3 +93,4 @@
 /home/fabiokusaba/RiderProjects/ZeroPay/ZeroPayAPI/src/ZeroPay.API/bin/Debug/net10.0/ZeroPay.Core.pdb
 /home/fabiokusaba/RiderProjects/ZeroPay/ZeroPayAPI/src/ZeroPay.API/bin/Debug/net10.0/ZeroPay.Infrastructure.pdb
 /home/fabiokusaba/RiderProjects/ZeroPay/ZeroPayAPI/src/ZeroPay.API/bin/Debug/net10.0/ZeroPay.Shared.pdb
+/home/fabiokusaba/RiderProjects/ZeroPay/ZeroPayAPI/src/ZeroPay.API/obj/Debug/net10.0/ZeroPay.API.sourcelink.json

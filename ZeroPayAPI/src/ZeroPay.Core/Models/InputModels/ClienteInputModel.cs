@@ -11,7 +11,6 @@ public class ClienteInputModel(
     string senha)
 {
     public string NomeCompleto { get; } = nomeCompleto;
-    public ESituacaoCliente Situacao { get; } = ESituacaoCliente.Ativo;
     public string Email { get; } = email;
     public string Cpf { get; } = cpf;
     public DateOnly DataNascimento { get; } = dataNascimento;

@@ -61,3 +61,4 @@
 /home/fabiokusaba/RiderProjects/ZeroPay/ZeroPayAPI/src/ZeroPay.Infrastructure/bin/Debug/net10.0/ZeroPay.Core.dll
 /home/fabiokusaba/RiderProjects/ZeroPay/ZeroPayAPI/src/ZeroPay.Infrastructure/bin/Debug/net10.0/ZeroPay.Core.pdb
 /home/fabiokusaba/RiderProjects/ZeroPay/ZeroPayAPI/src/ZeroPay.Infrastructure/obj/Debug/net10.0/ZeroPay..E5790605.Up2Date
+/home/fabiokusaba/RiderProjects/ZeroPay/ZeroPayAPI/src/ZeroPay.Infrastructure/obj/Debug/net10.0/ZeroPay.Infrastructure.sourcelink.json
