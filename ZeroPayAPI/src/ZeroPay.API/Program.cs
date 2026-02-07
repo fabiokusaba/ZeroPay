@@ -1,3 +1,4 @@
+using ZeroPay.API.Extensions;
 using ZeroPay.Application;
 using ZeroPay.Infrastructure;
 
@@ -13,7 +14,8 @@ builder.Services.AddOpenApi();
 
 builder.Services
     .AddInfrastructure()
-    .AddAplication();
+    .AddAplication()
+    .AddValidators();
 
 var app = builder.Build();
 

@@ -94,3 +94,7 @@
 /home/fabiokusaba/RiderProjects/ZeroPay/ZeroPayAPI/src/ZeroPay.API/bin/Debug/net10.0/ZeroPay.Infrastructure.pdb
 /home/fabiokusaba/RiderProjects/ZeroPay/ZeroPayAPI/src/ZeroPay.API/bin/Debug/net10.0/ZeroPay.Shared.pdb
 /home/fabiokusaba/RiderProjects/ZeroPay/ZeroPayAPI/src/ZeroPay.API/obj/Debug/net10.0/ZeroPay.API.sourcelink.json
+/home/fabiokusaba/RiderProjects/ZeroPay/ZeroPayAPI/src/ZeroPay.API/bin/Debug/net10.0/FluentValidation.dll
+/home/fabiokusaba/RiderProjects/ZeroPay/ZeroPayAPI/src/ZeroPay.API/bin/Debug/net10.0/FluentValidation.DependencyInjectionExtensions.dll
+/home/fabiokusaba/RiderProjects/ZeroPay/ZeroPayAPI/src/ZeroPay.API/bin/Debug/net10.0/SharpGrip.FluentValidation.AutoValidation.Mvc.dll
+/home/fabiokusaba/RiderProjects/ZeroPay/ZeroPayAPI/src/ZeroPay.API/bin/Debug/net10.0/SharpGrip.FluentValidation.AutoValidation.Shared.dll

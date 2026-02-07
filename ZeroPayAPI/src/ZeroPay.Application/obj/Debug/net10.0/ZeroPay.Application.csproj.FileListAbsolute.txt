@@ -14,3 +14,5 @@
 /home/fabiokusaba/RiderProjects/ZeroPay/ZeroPayAPI/src/ZeroPay.Application/obj/Debug/net10.0/ZeroPay.Application.csproj.AssemblyReference.cache
 /home/fabiokusaba/RiderProjects/ZeroPay/ZeroPayAPI/src/ZeroPay.Application/obj/Debug/net10.0/ZeroPay.Application.sourcelink.json
 /home/fabiokusaba/RiderProjects/ZeroPay/ZeroPayAPI/src/ZeroPay.Application/obj/Debug/net10.0/ZeroPay..1618FD21.Up2Date
+/home/fabiokusaba/RiderProjects/ZeroPay/ZeroPayAPI/src/ZeroPay.Application/bin/Debug/net10.0/ZeroPay.Shared.dll
+/home/fabiokusaba/RiderProjects/ZeroPay/ZeroPayAPI/src/ZeroPay.Application/bin/Debug/net10.0/ZeroPay.Shared.pdb

@@ -2,6 +2,19 @@
   "version": 3,
   "targets": {
     "net10.0": {
+      "FluentValidation/12.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/FluentValidation.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/FluentValidation.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.Extensions.DependencyInjection.Abstractions/10.0.1": {
         "type": "package",
         "compile": {
@@ -27,10 +40,35 @@
         "runtime": {
           "bin/placeholder/ZeroPay.Core.dll": {}
         }
+      },
+      "ZeroPay.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "compile": {
+          "bin/placeholder/ZeroPay.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ZeroPay.Shared.dll": {}
+        }
       }
     }
   },
   "libraries": {
+    "FluentValidation/12.1.1": {
+      "sha512": "EPpkIe1yh1a0OXyC100oOA8WMbZvqUu5plwhvYcb7oSELfyUZzfxV48BLhvs3kKo4NwG7MGLNgy1RJiYtT8Dpw==",
+      "type": "package",
+      "path": "fluentvalidation/12.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "fluent-validation-icon.png",
+        "fluentvalidation.12.1.1.nupkg.sha512",
+        "fluentvalidation.nuspec",
+        "lib/net8.0/FluentValidation.dll",
+        "lib/net8.0/FluentValidation.xml"
+      ]
+    },
     "Microsoft.Extensions.DependencyInjection.Abstractions/10.0.1": {
       "sha512": "oIy8fQxxbUsSrrOvgBqlVgOeCtDmrcynnTG+FQufcUWBrwyPfwlUkCDB2vaiBeYPyT+20u9/HeuHeBf+H4F/8g==",
       "type": "package",
@@ -66,12 +104,19 @@
       "type": "project",
       "path": "../ZeroPay.Core/ZeroPay.Core.csproj",
       "msbuildProject": "../ZeroPay.Core/ZeroPay.Core.csproj"
+    },
+    "ZeroPay.Shared/1.0.0": {
+      "type": "project",
+      "path": "../ZeroPay.Shared/ZeroPay.Shared.csproj",
+      "msbuildProject": "../ZeroPay.Shared/ZeroPay.Shared.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net10.0": [
+      "FluentValidation >= 12.1.1",
       "Microsoft.Extensions.DependencyInjection.Abstractions >= 10.0.1",
-      "ZeroPay.Core >= 1.0.0"
+      "ZeroPay.Core >= 1.0.0",
+      "ZeroPay.Shared >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -102,6 +147,9 @@
           "projectReferences": {
             "/home/fabiokusaba/RiderProjects/ZeroPay/ZeroPayAPI/src/ZeroPay.Core/ZeroPay.Core.csproj": {
               "projectPath": "/home/fabiokusaba/RiderProjects/ZeroPay/ZeroPayAPI/src/ZeroPay.Core/ZeroPay.Core.csproj"
+            },
+            "/home/fabiokusaba/RiderProjects/ZeroPay/ZeroPayAPI/src/ZeroPay.Shared/ZeroPay.Shared.csproj": {
+              "projectPath": "/home/fabiokusaba/RiderProjects/ZeroPay/ZeroPayAPI/src/ZeroPay.Shared/ZeroPay.Shared.csproj"
             }
           }
         }
@@ -122,6 +170,10 @@
       "net10.0": {
         "targetAlias": "net10.0",
         "dependencies": {
+          "FluentValidation": {
+            "target": "Package",
+            "version": "[12.1.1, )"
+          },
           "Microsoft.Extensions.DependencyInjection.Abstractions": {
             "target": "Package",
             "version": "[10.0.1, )"
@@ -143,7 +195,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/10.0.100/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/10.0.101/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.CSharp": "(,4.7.32767]",
           "Microsoft.VisualBasic": "(,10.4.32767]",
