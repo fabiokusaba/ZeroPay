@@ -9,6 +9,8 @@ public static class ApplicationModule
     public static IServiceCollection AddAplication(this IServiceCollection services)
     {
         services.AddScoped<ICadastrarClienteApplication, CadastrarClienteApplication>();
+        services.AddScoped<IBuscarClientesApplication, BuscarClientesApplication>();
+        services.AddScoped<IBuscarClientePorIdApplication, BuscarClientePorIdApplication>();
         return services;
     }
 }
