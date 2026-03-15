@@ -30,5 +30,23 @@ public class Cliente
 
     public string Telefone { get; private set; } 
 
-    public string Senha { get; private set; } 
+    public string Senha { get; private set; }
+
+    public Cliente SetNomeCompleto(string nomeCompleto)
+    {
+        NomeCompleto = nomeCompleto;
+        return this;
+    }
+
+    public Cliente SetEmail(string email)
+    {
+        Email = email;
+        return this;
+    }
+
+    public Cliente SetTelefone(string telefone)
+    {
+        Telefone = telefone;
+        return this;
+    }
 }
