@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using ZeroPay.Application.Applications;
 using ZeroPay.Core.Interfaces.Applications;
 using ZeroPay.Core.Models.InputModels;
 
@@ -7,7 +8,8 @@ namespace ZeroPay.API.Controllers;
 public class ClienteController(
     ICadastrarClienteApplication cadastrarClienteApplication,
     IBuscarClientesApplication buscarClientesApplication,
-    IBuscarClientePorIdApplication buscarClientePorIdApplication
+    IBuscarClientePorIdApplication buscarClientePorIdApplication,
+    IAtualizarClienteApplication atualizarClienteApplication
 ) : MainController
 {
     [HttpPost]
@@ -36,5 +38,12 @@ public class ClienteController(
         }
 
         return Ok(cliente);
+    }
+
+    [HttpPut("{id}")]
+    public async Task<IActionResult> AtualizarAsync([FromRoute] Guid id, [FromBody] AtualizacaoClienteInputModel inputModel)
+    {
+        await atualizarClienteApplication.AtualizarAsync(id, inputModel);
+        return NoContent();
     }
 }
