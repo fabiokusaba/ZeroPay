@@ -8,12 +8,9 @@ public class ClienteInputModel(
     string cpf,
     DateOnly dataNascimento,
     string telefone,
-    string senha)
+    string senha) : BaseClienteInputModel(nomeCompleto, email, telefone)
 {
-    public string NomeCompleto { get; } = nomeCompleto;
-    public string Email { get; } = email;
     public string Cpf { get; } = cpf;
     public DateOnly DataNascimento { get; } = dataNascimento;
-    public string Telefone { get; } = telefone;
     public string Senha { get; } = senha;
 }
