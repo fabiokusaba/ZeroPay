@@ -1,4 +1,5 @@
 using ZeroPay.API.Extensions;
+using ZeroPay.API.Middlewares;
 using ZeroPay.Application;
 using ZeroPay.Infrastructure;
 
@@ -15,7 +16,8 @@ builder.Services.AddOpenApi();
 builder.Services
     .AddInfrastructure()
     .AddAplication()
-    .AddValidators();
+    .AddValidators()
+    .AddMiddlewares(); // Adicionando o middleware no contexto
 
 var app = builder.Build();
 
@@ -30,9 +32,12 @@ if (app.Environment.IsDevelopment())
     });
 }
 
+// Ordem lógica -> Redirecionamento HTTPS -> Validação do usuário logado -> Tratamento global de exceção -> Requisição
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
+
+app.UseMiddleware<GlobalExceptionHandler>(); // Indicando que vamos usar o nosso middleware
 
 app.MapControllers();
 
