@@ -1,6 +1,8 @@
 using Microsoft.Extensions.DependencyInjection;
 using ZeroPay.Application.Applications;
+using ZeroPay.Application.Notifications;
 using ZeroPay.Core.Interfaces.Applications;
+using ZeroPay.Core.Interfaces.Notifications;
 
 namespace ZeroPay.Application;
 
@@ -12,6 +14,7 @@ public static class ApplicationModule
         services.AddScoped<IBuscarClientesApplication, BuscarClientesApplication>();
         services.AddScoped<IBuscarClientePorIdApplication, BuscarClientePorIdApplication>();
         services.AddScoped<IAtualizarClienteApplication, AtualizarClienteApplication>();
+        services.AddScoped<INotificacao, Notificacao>();
         
         return services;
     }

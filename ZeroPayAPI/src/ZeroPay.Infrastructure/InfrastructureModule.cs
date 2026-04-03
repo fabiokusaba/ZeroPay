@@ -14,6 +14,8 @@ public static class InfrastructureModule
             p.UseNpgsql("Server=localhost;Port=5490;Database=zeropay;User Id=admin;Password=admin;"));
 
         services.AddScoped<IClienteRepository, ClienteRepositoryImpl>();
+        services.AddScoped<ICarteiraRepository, CarteiraRepositoryImpl>();
+        services.AddScoped<IUnitOfWork, UnitOfWorkImpl>();
         
         return  services;
     }

@@ -5,10 +5,9 @@ using ZeroPay.Core.Models.InputModels;
 
 namespace ZeroPay.Application.Applications;
 
-public class CadastrarClienteApplication(IClienteRepository repository) : ICadastrarClienteApplication
+public class CadastrarClienteApplication(IUnitOfWork unitOfWork) : ICadastrarClienteApplication
 {
-    private readonly IClienteRepository _repository = repository;
-    
+
     public async Task<Guid> CadastrarAsync(ClienteInputModel inputModel)
     {
         var cliente = new Cliente(
@@ -19,7 +18,25 @@ public class CadastrarClienteApplication(IClienteRepository repository) : ICadas
             inputModel.Telefone, 
             inputModel.Senha
         );
-        
-        return await _repository.CadastrarAsync(cliente);
+
+        try
+        {
+            await unitOfWork.BeginTransactionAsync();
+
+            var clienteId = await unitOfWork.Clientes.CadastrarAsync(cliente);
+
+            var carteira = new Carteira(clienteId);
+
+            await unitOfWork.Carteiras.CadastrarAsync(carteira);
+
+            await unitOfWork.CommitAsync();
+
+            return clienteId;
+        }
+        catch (Exception)
+        {
+            
+            throw;
+        }
     }
 }
