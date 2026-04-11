@@ -14,6 +14,7 @@ public static class ApplicationModule
         services.AddScoped<IBuscarClientesApplication, BuscarClientesApplication>();
         services.AddScoped<IBuscarClientePorIdApplication, BuscarClientePorIdApplication>();
         services.AddScoped<IAtualizarClienteApplication, AtualizarClienteApplication>();
+        services.AddScoped<IDepositarApplication, DepositarApplication>();
         services.AddScoped<INotificacao, Notificacao>();
         
         return services;

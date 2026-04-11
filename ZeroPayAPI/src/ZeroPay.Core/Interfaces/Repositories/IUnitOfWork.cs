@@ -11,5 +11,6 @@ public interface IUnitOfWork
     ICarteiraRepository Carteiras { get; }
     ITransacaoRepository Transacoes { get; }
     Task BeginTransactionAsync();
+    Task SaveChangesAsync();
     Task CommitAsync();
 }

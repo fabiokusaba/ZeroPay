@@ -25,6 +25,11 @@ public class UnitOfWorkImpl(
         _transaction = await zeroPayDbContext.Database.BeginTransactionAsync();
     }
 
+    public async Task SaveChangesAsync()
+    {
+        await zeroPayDbContext.SaveChangesAsync();
+    }
+
     public async Task CommitAsync()
     {
         if (_transaction is null)

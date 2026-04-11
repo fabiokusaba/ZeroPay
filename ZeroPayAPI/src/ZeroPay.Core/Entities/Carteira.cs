@@ -29,4 +29,9 @@ public class Carteira
 
         return $"{numeroConta}-{digito}";
     }
+
+    public void AtualizarSaldo(decimal novoSaldo)
+    {
+        Saldo = novoSaldo;
+    }
 }
