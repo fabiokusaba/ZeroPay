@@ -1,22 +1,39 @@
 ﻿using ZeroPay.Core.Enums;
+using ZeroPay.Core.Utils;
 
 namespace ZeroPay.Core.Entities;
 
-public class Transacao(ETipoTransacao tipo, decimal valor, string? descricao, Guid carteiraId, decimal saldoResultante, Guid? cofrinhoId = null)
+public class Transacao
 {
-    public Guid Id { get; } = Guid.NewGuid();
+    public Transacao()
+    {
+    }
 
-    public short Tipo { get; } = (short) tipo;
+    public Transacao(ETipoTransacao tipo, decimal valor, string? descricao, Guid carteiraId, decimal saldoResultante, Guid? cofrinhoId = null)
+    {
+        Id = Guid.NewGuid();
+        Tipo = (short) tipo;
+        Data = DateTimeUtils.Now();
+        Valor = valor;
+        Descricao = descricao;
+        CarteiraId = carteiraId;
+        SaldoResultante = saldoResultante;
+        CofrinhoId = cofrinhoId;
+    }
 
-    public DateTime Data { get; } = DateTime.Now;
+    public Guid Id { get; }
 
-    public decimal Valor { get; } = valor;
+    public short Tipo { get; }
 
-    public decimal SaldoResultante { get; } = saldoResultante;
+    public DateTime Data { get; }
 
-    public string? Descricao { get; } = descricao;
+    public decimal Valor { get; }
 
-    public Guid CarteiraId { get; } = carteiraId;
+    public decimal SaldoResultante { get; }
 
-    public Guid? CofrinhoId { get; } = cofrinhoId;
+    public string? Descricao { get; }
+
+    public Guid CarteiraId { get; }
+
+    public Guid? CofrinhoId { get; }
 }

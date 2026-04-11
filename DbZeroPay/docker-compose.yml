@@ -13,8 +13,6 @@ services:
     volumes:
       - ./scripts:/docker-entrypoint-initdb.d
       - zeropay-db-data:/var/lib/postgresql/data
-    restart: always
-
 volumes:
   zeropay-db-data:
     name: zeropay-db-data

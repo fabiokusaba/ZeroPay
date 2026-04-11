@@ -2,6 +2,10 @@
 
 public class Carteira
 {
+    public Carteira()
+    {
+    }
+    
     public Carteira(Guid clienteId)
     {
         Id = Guid.NewGuid();
@@ -11,15 +15,15 @@ public class Carteira
         ClienteId = clienteId;
     }
 
-    public Guid Id { get; set; }
+    public Guid Id { get; }
 
-    public decimal Saldo { get; set; }
+    public decimal Saldo { get; private set; }
 
-    public string Conta { get; set; } = null!;
+    public string Conta { get; }
 
-    public string Agencia { get; set; } = null!;
+    public string Agencia { get; }
 
-    public Guid ClienteId { get; set; }
+    public Guid ClienteId { get; }
 
     private static string GerarNumeroConta()
     {
