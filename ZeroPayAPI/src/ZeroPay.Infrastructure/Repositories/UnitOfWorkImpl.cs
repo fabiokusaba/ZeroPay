@@ -10,13 +10,15 @@ namespace ZeroPay.Infrastructure.Repositories;
 public class UnitOfWorkImpl(
     ZeroPayDbContext zeroPayDbContext,
     IClienteRepository clientes,
-    ICarteiraRepository carteiras
+    ICarteiraRepository carteiras,
+    ITransacaoRepository transacoes
 ) : IUnitOfWork
 {
 
     private IDbContextTransaction? _transaction; // Armazena os dados da transação que está sendo efetuada.
     public IClienteRepository Clientes => clientes;
     public ICarteiraRepository Carteiras => carteiras;
+    public ITransacaoRepository Transacoes => transacoes;
 
     public async Task BeginTransactionAsync()
     {

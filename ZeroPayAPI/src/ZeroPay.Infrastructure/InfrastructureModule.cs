@@ -15,6 +15,8 @@ public static class InfrastructureModule
 
         services.AddScoped<IClienteRepository, ClienteRepositoryImpl>();
         services.AddScoped<ICarteiraRepository, CarteiraRepositoryImpl>();
+        services.AddScoped<ITransacaoRepository, TransacaoRepositoryImpl>();
+        
         services.AddScoped<IUnitOfWork, UnitOfWorkImpl>();
         
         return  services;

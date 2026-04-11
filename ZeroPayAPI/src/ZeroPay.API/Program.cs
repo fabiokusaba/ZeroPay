@@ -1,6 +1,7 @@
 using ZeroPay.API.Extensions;
 using ZeroPay.API.Middlewares;
 using ZeroPay.Application;
+using ZeroPay.Core;
 using ZeroPay.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -14,6 +15,7 @@ builder.Services.AddControllers();
 builder.Services.AddOpenApi();
 
 builder.Services
+    .AddDomain()
     .AddInfrastructure()
     .AddAplication()
     .AddValidators()
